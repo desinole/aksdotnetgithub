@@ -12,7 +12,11 @@ We will evolve the app, actions and AKS concepts as we go along
 dotnet new blazorserver -o BlazorApp --no-https
 ```
 
-Follow the directions in this [tutorial](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/create)
+Follow the directions in this [tutorial](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/create) to create blazor app
+
+Follow the direction in this [tutorial](https://chrissainty.com/containerising-blazor-applications-with-docker-containerising-a-blazor-server-app/) to containerize the app
+
+
 
 2. Create a basic AKS cluster with supporting ACR
 
