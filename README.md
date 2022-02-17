@@ -1,5 +1,7 @@
 # AKS dotnet GitHub
 
+[![build](https://github.com/desinole/aksdotnetgithub/actions/workflows/build-validation.yml/badge.svg)](https://github.com/desinole/aksdotnetgithub/actions/workflows/build-validation.yml)
+
 In this exercise, we will compile, containerize and deploy a .NET6 app to an AKS cluster using GitHub Actions.
 
 We will evolve the app, actions and AKS concepts as we go along
