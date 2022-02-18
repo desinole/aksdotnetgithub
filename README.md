@@ -16,6 +16,8 @@ dotnet new blazorserver -o BlazorApp --no-https
 
 Follow the directions in this [tutorial](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/create) to create blazor app
 
+Also review [Build a web app with Blazor](https://docs.microsoft.com/en-us/learn/modules/build-blazor-webassembly-visual-studio-code/?WT.mc_id=dotnet-35129-website)
+
 Follow the direction in this [tutorial](https://chrissainty.com/containerising-blazor-applications-with-docker-containerising-a-blazor-server-app/) to containerize the app
 
 
