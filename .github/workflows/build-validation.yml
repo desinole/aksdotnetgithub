@@ -36,9 +36,6 @@ jobs:
       run: dotnet build --configuration Release --no-restore
       working-directory: src/blazorapp
 
-    - name: Test
-      run: dotnet test -c Release --no-build --verbosity normal --filter "Category!=LongRunning"
-      working-directory: src/blazorapptest
 
   test:
 
@@ -57,8 +54,8 @@ jobs:
 
     - name: Install dependencies
       run: dotnet restore
-      working-directory: src/blazorapptest
+      working-directory: src/blazortest
 
     - name: Test
       run: dotnet test -c Release --no-build --verbosity normal --filter "Category!=LongRunning"
-      working-directory: src/blazorapptest
+      working-directory: src/blazortest
