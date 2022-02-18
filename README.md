@@ -20,6 +20,9 @@ Also review [Build a web app with Blazor](https://docs.microsoft.com/en-us/learn
 
 Follow the direction in this [tutorial](https://chrissainty.com/containerising-blazor-applications-with-docker-containerising-a-blazor-server-app/) to containerize the app
 
+Setup Blazor Tests
+[1](https://medium.com/younited-tech-blog/unit-test-a-blazor-component-729eec4eab01)
+[2](https://bunit.dev/docs/getting-started/writing-tests.html?tabs=xunit)
 
 
 2. Create a basic AKS cluster with supporting ACR

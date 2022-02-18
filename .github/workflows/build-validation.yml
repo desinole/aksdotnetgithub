@@ -35,3 +35,30 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
       working-directory: src/blazorapp
+
+    - name: Test
+      run: dotnet test -c Release --no-build --verbosity normal --filter "Category!=LongRunning"
+      working-directory: src/blazorapptest
+
+  test:
+
+    name: test-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install dependencies
+      run: dotnet restore
+      working-directory: src/blazorapptest
+
+    - name: Test
+      run: dotnet test -c Release --no-build --verbosity normal --filter "Category!=LongRunning"
+      working-directory: src/blazorapptest
